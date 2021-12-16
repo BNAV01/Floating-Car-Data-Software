@@ -13,4 +13,6 @@
 9.   Automóvil deportivo
 10. Furgoneta
 11. Camioneta
+
+
 Además,  todo  vehículo  posee:  ***código  en  inventario,  marca,  modelo,  número  de  chasis  (esto  es único), color, año de fabricación, precio de compra, todos inmutables, y precio de venta,  pero los usados  tienen,  además,  una  lista  de  dueños  anteriores,  una  placa  patente  y  fecha  de  próxima revisión técnica.***
