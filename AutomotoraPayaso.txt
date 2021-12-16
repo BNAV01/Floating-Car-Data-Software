@@ -1,0 +1,75 @@
+------------------------------
+ Capital: 258000000
+------------------------------
+ Segmento: 1
+ Codigo Inventario: 0000001
+ Marca: BMW
+ Modelo: BMW2002
+ Chasis: 110001
+ Color: Rojo
+ Fecha de Fabricacion: 27/07/2021
+ Precio de Compra: 50000000
+ Precio de Venta: 150000000
+ Tipo: Nuevo
+------------------------------
+ Segmento: 1
+ Codigo Inventario: 0000002
+ Marca: Toyota
+ Modelo: Yaris
+ Chasis: 110002
+ Color: Gris
+ Fecha de Fabricacion: 21/12/2021
+ Precio de Compra: 400000
+ Precio de Venta: 600000
+ Tipo: Nuevo
+------------------------------
+ Segmento: 1
+ Codigo Inventario: 0000003
+ Marca: asd
+ Modelo: asd
+ Chasis: 110003
+ Color: rojo
+ Fecha de Fabricacion: 12/12/2012
+ Precio de Compra: 10000000
+ Precio de Venta: 20000000
+ Tipo: Usado
+ Propietario Anterior: yo, juan, diego, luis
+ Placa Patente: asd123
+ Fecha Proxima Revision Tecnica: 2022-12-16
+------------------------------
+ Segmento: 1
+ Codigo Inventario: 1
+ Marca: Test
+ Modelo: Test
+ Chasis: 110004
+ Color: Azul
+ Fecha de Fabricacion: 12/12/2011
+ Precio de Compra: 8000000
+ Precio de Venta: 16000000
+ Tipo: Nuevo
+------------------------------
+ Segmento: 1
+ Codigo Inventario: 1
+ Marca: TEst4
+ Modelo: Test4
+ Chasis: 110005
+ Color: Test4
+ Fecha de Fabricacion: 12/12/2021
+ Precio de Compra: 12000000
+ Precio de Venta: 24000000
+ Tipo: Nuevo
+------------------------------
+ Segmento: 1
+ Codigo Inventario: 0000006
+ Marca: Test6
+ Modelo: Terst6
+ Chasis: 110006
+ Color: test6
+ Fecha de Fabricacion: 12/12/2024
+ Precio de Compra: 30000000
+ Precio de Venta: 60000000
+ Tipo: Usado
+ Propietario Anterior: yo
+ Placa Patente: xrqw12
+ Fecha Proxima Revision Tecnica: 2021-12-16
+------------------------------
