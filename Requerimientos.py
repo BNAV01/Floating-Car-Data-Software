@@ -599,6 +599,58 @@ def notificarRevisionTecnica():
             continue
     archivo.close()
 
-
+def verificarStockPorSegmento():
+    print("-------------------------------------------------")
+    print("******Stock Por Segmentos******")
+    archivo=open('AutomotoraPayaso.txt','r',encoding='utf8')
+    l1 = []
+    dMarca = {}
+    dSegmento = {}
+    #ELIMINAR SEPARADORES DE TEXTO
+    for x in archivo:
+        if x == "------------------------------\n":
+            continue
+        else:
+            l1.append(x.split(":"))
+    #ELIMINAR SALTO DE LINEA        
+    for i in range (len(l1)):
+        l1[i][1] = l1[i][1].replace("\n", "")
+            
+    for j in range(len(l1)):
+        if l1[j][0] == " Segmento":
+            if l1[j][1] in dSegmento:
+                dSegmento[l1[j][1]] += 1
+            else:
+                dSegmento[l1[j][1]] = 1
+    for k, v in dSegmento.items():
+        print("El Segmento"+k, "Posee :", v,"Automoviles")
+    archivo.close()
+    
+def verificarStockPorMarca():
+    print("-------------------------------------------------")
+    print("******Stock Por Marcas******")
+    archivo=open('AutomotoraPayaso.txt','r',encoding='utf8')
+    l1 = []
+    dMarca = {}
+    dSegmento = {}
+    #ELIMINAR SEPARADORES DE TEXTO
+    for x in archivo:
+        if x == "------------------------------\n":
+            continue
+        else:
+            l1.append(x.split(":"))
+    #ELIMINAR SALTO DE LINEA        
+    for i in range (len(l1)):
+        l1[i][1] = l1[i][1].replace("\n", "")
+    #OBTENER STOCK DE MARCAS
+    for j in range(len(l1)):
+        if l1[j][0] == " Marca":
+            if l1[j][1] in dMarca:
+                dMarca[l1[j][1]] += 1
+            else:
+                dMarca[l1[j][1]] = 1
+    for k, v in dMarca.items():
+        print("Marca:"+ k, "| Stock:", v)
+    archivo.close()   
 if __name__ =="__main__":
     print("Esta es la clase! Esto no se ejecuta")

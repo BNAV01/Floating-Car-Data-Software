@@ -85,59 +85,11 @@ while(a!=10):
 
     elif(a==2):
         #Verificar Stock Por Marca
-        print("-------------------------------------------------")
-        print("******Stock Por Marcas******")
-        archivo=open('AutomotoraPayaso.txt','r',encoding='utf8')
-        l1 = []
-        dMarca = {}
-        dSegmento = {}
-        #ELIMINAR SEPARADORES DE TEXTO
-        for x in archivo:
-            if x == "------------------------------\n":
-                continue
-            else:
-                l1.append(x.split(":"))
-        #ELIMINAR SALTO DE LINEA        
-        for i in range (len(l1)):
-            l1[i][1] = l1[i][1].replace("\n", "")
-        #OBTENER STOCK DE MARCAS
-        for j in range(len(l1)):
-            if l1[j][0] == " Marca":
-                if l1[j][1] in dMarca:
-                    dMarca[l1[j][1]] += 1
-                else:
-                    dMarca[l1[j][1]] = 1
-        for k, v in dMarca.items():
-            print("Marca:"+ k, "| Stock:", v)
-        archivo.close()
+        Rq.verificarStockPorMarca()
     
     elif(a==3):
         #Verificar Stock Por Segmento
-        print("-------------------------------------------------")
-        print("******Stock Por Segmentos******")
-        archivo=open('AutomotoraPayaso.txt','r',encoding='utf8')
-        l1 = []
-        dMarca = {}
-        dSegmento = {}
-        #ELIMINAR SEPARADORES DE TEXTO
-        for x in archivo:
-            if x == "------------------------------\n":
-                continue
-            else:
-                l1.append(x.split(":"))
-        #ELIMINAR SALTO DE LINEA        
-        for i in range (len(l1)):
-            l1[i][1] = l1[i][1].replace("\n", "")
-            
-        for j in range(len(l1)):
-            if l1[j][0] == " Segmento":
-                if l1[j][1] in dSegmento:
-                    dSegmento[l1[j][1]] += 1
-                else:
-                    dSegmento[l1[j][1]] = 1
-        for k, v in dSegmento.items():
-            print("El Segmento"+k, "Posee :", v,"Automoviles")
-        archivo.close()
+        Rq.verificarStockPorSegmento()
         
     elif(a==4):
         #Para Vender Vehiculo
